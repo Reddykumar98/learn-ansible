@@ -1,0 +1,17 @@
+
+- firstName : Reddykumar
+  lastname :  Duggireddy
+  dob : 11-09-1999
+  addresses :
+  - type : permanent
+    doorNO : 11/62,
+    streetName : Devalampalli
+    city : Rayachoty
+  - type : temporary
+    doorNo : 01/52,
+    streetName : ManyataLayout
+    city : Bengalore
+  skills :
+    os : Linux
+    IDE : vscode
+    cm : ansible
