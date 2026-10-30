@@ -11,4 +11,4 @@
   tasks:
   - name: print the confidential information
     debug:
-      msg: "User name is : {{user}}, password is : {{password}}"
+      msg: "User name is : {{username}}, password is : {{password}}"
