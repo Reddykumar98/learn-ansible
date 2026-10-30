@@ -1,0 +1,6 @@
+- name : ping demo
+  host : localhost
+  connection : local
+  task :
+  - name : ping localhost
+    ping :
