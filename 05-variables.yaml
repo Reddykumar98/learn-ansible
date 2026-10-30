@@ -2,10 +2,10 @@
   hosts: local
   connection: local
   var:
-    course: "ansible"
+    course: ansible
     trainer: Sivakumar Reddy M
-    hours: 10 hours
+    duration: 10 hours
   tasks:
   - name: print the variables
     debug:
-      msg: "I, am learning {{course}} form {{trainer}},duration is {{hours}}"
+      msg: "I, am learning {{course}} form {{trainer}}, duration is {{duration}}"
