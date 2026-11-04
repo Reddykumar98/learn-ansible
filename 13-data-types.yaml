@@ -2,10 +2,10 @@
   hosts: local
   connection: local
   vars:
-    course: "AiOPs with DevSecOps on AWS" #String
-    duration: 150 #number
+    course: "AiOPs with DevSecOps on AWS" # String
+    duration: 150 # number
     is_live_sessions: true
-    topics: #list
+    topics: # list
     - Linux
     - shell
     - ansible
@@ -13,7 +13,7 @@
     more_details: # dictionary/map
       trainer: sivakumar Reddy
       months: 4
-    exact_duration_in_months: 4.5
+      exact_duration_in_months: 4.5
   tasks:
   - name: print info and type
     debug:
