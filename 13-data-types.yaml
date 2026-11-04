@@ -1,0 +1,28 @@
+- name: course information
+  hosts: local
+  connection: local
+  vars:
+    course: "AiOPs with DevSecOps on AWS" #String
+    duration: 150 #number
+    is_live_sessions: true
+    topics: #list
+    - Linux
+    - shell
+    - ansible
+    - terraform
+    more_details: # dictionary/map
+      trainer: sivakumar Reddy
+      months: 4
+    exact_duration_in_months: 4.5
+  tasks:
+  - name: print info and type
+    debug:
+      msg: |
+        name: "{{ course }} : {{ course | type_debug }}"
+        duration: "{{ duration }} : {{ duration | type_debug }}"
+        is live sessions: "{{ is_live_sessions }} : {{ is_live_sessions | type_debug }}"
+        topics are: "{{ topics }} : {{ topic | type-debug }}"
+        more details: "{{ more_details }} : {{ more_details | type_debug }}"
+        trainer: "{{ trainer }} : {{trainer | type_debug }}"
+        months: "{{ months }} | {{ months }}"
+        exact_duration : "{{ exact_duration_in_months }} : {{exact_duration_in_months | type_dubug }}"
