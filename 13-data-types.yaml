@@ -21,7 +21,7 @@
         name: {{ course }} : {{ course | type_debug }}
         duration: {{ duration }} : {{ duration | type_debug }}
         is live sessions: {{ is_live_sessions }} : {{ is_live_sessions | type_debug }}
-        topics are: {{ topics }} : {{ topic | type-debug }}
+        topics are: {{ topics }} : {{ topics | type-debug }}
         more details: {{ more_details }} : {{ more_details | type_debug }}
         trainer: {{ trainer }} : {{trainer | type_debug }}
         months: {{ months }} : {{ months | type_debug }}
