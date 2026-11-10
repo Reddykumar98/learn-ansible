@@ -15,12 +15,15 @@
       msg: "Hi, {{ person_name | default ('kumar') }}"
   - name: convert string to list
     debug:
-      msg: "Topics are  {{ topics | split (',') }}"
+      msg: "Topics are: {{ topics | split (',') }}"
   - name: Convert list to string
     debug:
-      msg: "Full name {{ topic | join (' ') }}"
+      msg: "Full name: {{ names | join (' ') }}"
   - name: Convert lower to upper
     debug:
-      msg: " Duration  {{ duration | Upper }}"
+      msg: " Duration  {{ topic | Upper }}"
+  - name: Convert string to int
+    debug:
+      msg: " Duration  {{ duration | int }}"
   
   
