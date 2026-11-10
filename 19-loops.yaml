@@ -21,9 +21,9 @@
       msg: "Full name: {{ names | join (' ') }}"
   - name: Convert lower to upper
     debug:
-      msg: " Duration  {{ topic | Upper }}"
+      msg: "Duration  {{ topic | upper }}"
   - name: Convert string to int
     debug:
-      msg: " Duration  {{ duration | int }}"
+      msg: "Duration  {{ duration | int }}"
   
   
