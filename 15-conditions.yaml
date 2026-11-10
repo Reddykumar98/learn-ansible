@@ -1,0 +1,16 @@
+- name: print os is redhat or not
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: Install nginx in redhat
+    dnf:
+      name: nginx
+      state: present
+    when: ansibel_facts.os_family == "Redhat"
+- name: Install nginx in debian
+  apt:
+    name: nginx
+    state: present
+  when: ansibel_facts.os_family == "debian"
+
