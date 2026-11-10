@@ -8,8 +8,9 @@
       name: nginx
       state: present
     when: ansible_facts['os_family']== "RedHat"
-- name: Install nginx in Debian
-  apt:
-    name: nginx
-    state: present
+     
+  - name: Install nginx in Debian
+    apt:
+      name: nginx
+      state: present
   when: ansible_facts['os_family']== "Debian"
