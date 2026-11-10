@@ -4,7 +4,7 @@
   become: yes
   vars:
     packages:
-    - niginx
+    - nginx
     - mysql
     - git
   tasks:
