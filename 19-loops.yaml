@@ -12,13 +12,13 @@
   tasks:
   - name: print the name
     debug:
-      msg: "Hi, {{ person_name | default ('kumar') }}"
+      msg: "Hi, {{ person_name | default('kumar') }}"
   - name: convert string to list
     debug:
-      msg: "Topics are: {{ topics | split (',') }}"
+      msg: "Topics are: {{ vars.topics | split(',') }}"
   - name: Convert list to string
     debug:
-      msg: "Full name: {{ names | join (' ') }}"
+      msg: "Full name: {{ names | join(' ') }}"
   - name: Convert lower to upper
     debug:
       msg: "Duration  {{ topic | upper }}"
