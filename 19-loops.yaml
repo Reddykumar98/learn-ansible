@@ -24,6 +24,6 @@
       msg: "Duration  {{ topic | upper }}"
   - name: Convert string to int
     debug:
-      msg: "Duration  {{ duration | int }}"
+      msg: "Duration: {{ duration | int }}"
   
   
