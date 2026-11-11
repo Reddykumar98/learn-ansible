@@ -6,6 +6,7 @@
   - name: check roboshop user exit or not
     command: id roboshop
     register: user_output
+    ignore_error: true
   - name: print_output
     debug:
       msg: "{{ user_output }}"
