@@ -5,8 +5,8 @@
   - name: test the shell and command module
     #command: cat /ect/passwd/ | grep ec2-user
     shell: cat /ect/passwd/ | grep ec2-user
-    register: ec2-user-output
+    register: ec2_user_output
 
   - name: print the output
     debug:
-      msg: "{{ ec2-user-output }}"
+      msg: "{{ ec2_user_output }}"
