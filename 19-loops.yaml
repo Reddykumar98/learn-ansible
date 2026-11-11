@@ -3,12 +3,12 @@
   connection: local
   vars:
     topics: "Linux,Shell,Ansible,Terraform,Docker"
-  names:
-  - Reddy
-  - Kumar
-  - Duggireddy
-  topic: Ansible
-  duration: "4"
+    names:
+    - Reddy
+    - Kumar
+    - Duggireddy
+    topic: Ansible
+    duration: "4"
   tasks:
   - name: print the name
     debug:
@@ -18,7 +18,7 @@
       msg: "Topics are: {{ topics | split(',') }}"
   - name: Convert list to string
     debug:
-      msg: "Full name: {{ names | join(' ') }}"
+      msg: "Full Name: {{ names | join(' ') }}"
   - name: Convert lower to upper
     debug:
       msg: "Duration  {{ topic | upper }}"
