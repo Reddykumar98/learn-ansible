@@ -3,8 +3,9 @@
   connection: local
   tasks:
   - name: test the shell and command module
-    command: cat /ect/passwd/ | grep ec2-user
-    rigistry: ec2-user-user_output
+    #command: cat /ect/passwd/ | grep ec2-user
+    shell: cat /ect/passwd/ | grep ec2-user
+    registry: ec2-user-user_output
 
   - name: print the output
     debug:
