@@ -10,7 +10,7 @@
   - name: print_output
     debug:
       msg: "{{ user_output }}"
-  - name: create user
-    command: useradd roboshop
+   - name: create user
+      command: useradd roboshop
    when: user_output.rc !=0
 
